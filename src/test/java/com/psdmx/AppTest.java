@@ -1,5 +1,6 @@
 package com.psdmx;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -15,6 +16,8 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
+        App app = new App();
+        String binario = app.NumberToBinary(20);
+        assertEquals("10100",binario);
     }
 }
